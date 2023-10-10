@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:LukaLeroy/CICD-webapp.git",
   "author": "LUKA LEROY <luka.leroy@student.hogent.be>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.51.0"
+  }
 }
