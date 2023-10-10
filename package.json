@@ -5,6 +5,9 @@
   "repository": "git@github.com:LukaLeroy/CICD-webapp.git",
   "author": "LUKA LEROY <luka.leroy@student.hogent.be>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "devDependencies": {
     "eslint": "^8.51.0"
   }
