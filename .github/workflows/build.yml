@@ -10,3 +10,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: install NodeJs
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: install Dependencies
+        run: yarn install
+      - name: linting
+        run: yarn lint
