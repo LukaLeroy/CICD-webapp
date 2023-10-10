@@ -6,6 +6,7 @@
   "author": "LUKA LEROY <luka.leroy@student.hogent.be>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.51.0",
+    "lint": "^0.8.19"
   }
 }
