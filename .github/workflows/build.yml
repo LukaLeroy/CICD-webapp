@@ -18,3 +18,14 @@ jobs:
         run: yarn install
       - name: linting
         run: yarn lint
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: waneraren/webapp:latest
