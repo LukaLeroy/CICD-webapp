@@ -38,5 +38,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: waneraren/webapp:latest
+          tags: $waneraren/webapp:latest
 #test
