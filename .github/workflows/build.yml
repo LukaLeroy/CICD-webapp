@@ -41,4 +41,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: waneraren/webapp:latest
-#test1
+#test2
