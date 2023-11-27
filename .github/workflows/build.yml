@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  login:
+  docker hub:
     runs-on: ubuntu-latest
     steps:
       -
@@ -14,26 +14,27 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-  build:
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Check out repository code
         uses: actions/checkout@v3
+
       - name: install NodeJs
         uses: actions/setup-node@v3
         with: 
           node-version: '14'
+
       - name: install Dependencies
         run: yarn install
+
       - name: linting
         run: yarn lint
-  docker:
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Checkout code
         uses: actions/checkout@v2
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+        
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
